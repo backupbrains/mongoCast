@@ -6,6 +6,7 @@ describe('Deleting a user', () => {
 	let joe;
 	
 	beforeEach((done) => {
+		console.log('create joe in delte js')
 		joe = new User({name: 'joe'});
 		joe.save()
 			.then(() => done());

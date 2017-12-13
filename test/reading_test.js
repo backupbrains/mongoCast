@@ -6,6 +6,7 @@ describe('Reading users out of the database', () => {
 	let joe;
 	
 	beforeEach((done) => {
+		console.log('create joe in read js');
 		joe = new User({name: 'joe'});
 		joe.save()
 		  .then(() => done());
